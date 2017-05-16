@@ -35,5 +35,11 @@ end
 vagrant up
 ```
 
+连接到虚拟机：
+
+```
+vagrant ssh
+```
+
 
 
