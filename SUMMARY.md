@@ -14,4 +14,5 @@
 ## 权限
 
 * [用户](quan-xian/yong-hu.md)
+* [sudo](quan-xian/sudo.md)
 
