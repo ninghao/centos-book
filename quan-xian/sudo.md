@@ -58,5 +58,11 @@ sudo systemctl start firewalld
 sudo systemctl stop firewalld
 ```
 
-这回又把 firewalld 防火墙给关了。
+这回又把 firewalld 防火墙给关了。查看服务状态可以执行：
+
+```
+sudo systemctl status firewalld
+```
+
+
 
