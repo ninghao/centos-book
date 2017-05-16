@@ -15,4 +15,5 @@
 
 * [用户](quan-xian/yong-hu.md)
 * [sudo](quan-xian/sudo.md)
+* [权限](quan-xian/quan-xian.md)
 
