@@ -38,3 +38,19 @@ vi ninghao-project/README.md
 
 输入 `:wq` ，可以保存对文件的修改。
 
+## 删除
+
+**rm**（remove），可以删除目录或文件。
+
+```
+rm ninghao-project/README.md
+```
+
+要删除一个目录里包含的所有内容，要加上 r 选项，想不出现确认提示，再加一个 f 选项。
+
+```
+rm -rf ninghao-project
+```
+
+
+
