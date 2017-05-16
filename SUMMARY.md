@@ -6,8 +6,11 @@
 * [列出](lie-chu.md)
 * [创建](chuang-jian.md)
 * [编辑](xiu-gai.md)
+* [虚拟机](xu-ni-ji.md)
 
 ## 服务
 
 ## 权限
+
+* [用户](quan-xian/yong-hu.md)
 
