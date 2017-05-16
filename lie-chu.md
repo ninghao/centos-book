@@ -19,9 +19,9 @@ ls ~
 返回的是指定位置下的东西。类似这样：
 
 ```
-Applications			Movies
-Desktop				Music
-Documents			Pictures
+Applications            Movies
+Desktop                Music
+Documents            Pictures
 ```
 
 在 macOS / Linux 系统上，用点开头的文件与目录会被隐藏起来，如果你想列出目录里包含的所有内容，包括这些用点开头的文件或目录，要加上一个 a 参数，像这样：
@@ -53,5 +53,23 @@ drwx------+  6 wanghao  staff   204  5 15 22:44 Downloads
 ls -la
 ```
 
-用了一个 l 参数，还有一个 a 参数。
+用了一个 `l` 参数，还有一个 `a` 参数。
+
+**排序**
+
+列出的内容，按内容的修改时间排列，最近修改的排在最前面。
+
+```
+ls -lt /Users/wanghao
+```
+
+返回：
+
+```
+drwx------@ 71 wanghao  staff  2414  5 16 13:38 Library
+drwx------+ 12 wanghao  staff   408  5 16 13:31 Desktop
+drwx------+  6 wanghao  staff   204  5 15 22:44 Downloads
+```
+
+
 
