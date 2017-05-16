@@ -2,7 +2,7 @@
 
 ## 重命名与移动
 
-mv（move）命令可以移动或重命名目录与文件。
+**mv**（move）命令可以移动或重命名目录与文件。
 
 把之前创建的 README.md 放到 awesome-project 目录的下面，可以执行：
 
@@ -18,7 +18,7 @@ mv awesome-project ninghao-project
 
 ## **编辑文件**
 
-vi 可以在命令行下编辑文件。
+**vi** 可以在命令行下编辑文件。
 
 ```
 vi ninghao-project/README.md
