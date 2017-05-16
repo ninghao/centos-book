@@ -52,5 +52,11 @@ su wanghao
 sudo systemctl start firewalld
 ```
 
+这次就成功的完成了需要 root 身份才能完成的任务（启动了 firewalld 防火墙）。权力太大忍不住再试一次：
 
+```
+sudo systemctl stop firewalld
+```
+
+这回又把 firewalld 防火墙给关了。
 
