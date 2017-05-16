@@ -7,6 +7,7 @@
 * [创建](chuang-jian.md)
 * [编辑](xiu-gai.md)
 * [虚拟机](xu-ni-ji.md)
+* [连接](lian-jie.md)
 
 ## 服务
 
