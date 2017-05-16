@@ -6,5 +6,5 @@
 * [目录与文件](mu-lu-yu-wen-jian.md)
 * [列出](lie-chu.md)
 * [创建](chuang-jian.md)
-* [修改](xiu-gai.md)
+* [编辑](xiu-gai.md)
 
