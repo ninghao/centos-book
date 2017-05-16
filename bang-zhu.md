@@ -43,10 +43,16 @@ DESCRIPTION
        IMAPS,  LDAP,  LDAPS,  POP3,  POP3S,  RTMP, RTSP, SCP, SFTP, SMB, SMBS,
        SMTP, SMTPS, TELNET and TFTP). The command is designed to work  without
        user interaction.
-...       
+...
 ```
 
 向后翻页按 `F`，向前翻页按 `B`，搜索按 `/` ，然后输入要搜索的关键词，退出按 `Q`。
+
+## 解释
+
+如果你在某个地方看到一条命令，里面用了很多参数你不懂是什么意思，可以在 [https://explainshell.com/](https://explainshell.com/) 网站上搜索一下。
+
+![](/assets/explainshell.png)
 
 
 
