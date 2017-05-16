@@ -21,6 +21,8 @@ wanghao is not in the sudoers file.  This incident will be reported.
 
 提示 wanghao 这个用户不在 sudoers 这个文件里。也就是他还不能使用 sudo 获得 root 权限。
 
+## 配置用户使用 sudo
+
 先执行 `exit` 退出 wanghao 用户身份，然后用有 root 权限的用户，把 wanghao 加到 wheel 这个用户群组里，在这个群组里的用户都可以使用 sudo。执行：
 
 ```
