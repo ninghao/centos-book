@@ -17,3 +17,92 @@ rsync 选项 源 目标
 
 ## 练习
 
+1，创建两个目录，在其中一个目录里添加几个文件。
+
+```
+mkdir app1 app2
+touch app2/f{1..3}
+```
+
+查看 app2，里面有三个空白的文件：
+
+```
+$ ls -l app2
+
+total 0
+-rw-r--r--. 1 wanghao ninghao 0 May 22 13:27 file1
+-rw-r--r--. 1 wanghao ninghao 0 May 22 13:27 file2
+-rw-r--r--. 1 wanghao ninghao 0 May 22 13:27 file3
+```
+
+2，同步本地目录。下面把 app2 目录下的文件同步到 app1 里面，用一个 -r 选项可以递归同步。执行：
+
+```
+rsync -r app2/ app1
+```
+
+注意 app2 后面有个 / ，表示要同步的源是 app2 这个目录下面的东西，并不是 app2 目录本身。
+
+同步完成以后，查看一下 app1 下面的内容：
+
+```
+$ ls -l app1
+
+total 0
+-rw-r--r--. 1 wanghao ninghao 0 May 22 13:38 file1
+-rw-r--r--. 1 wanghao ninghao 0 May 22 13:38 file2
+-rw-r--r--. 1 wanghao ninghao 0 May 22 13:38 file3
+```
+
+app1 里面已经包含了在 app2 下面的所有内容。观察文件的修改时间，你会发现跟 app2 下面的源文件的修改时间是有变化的。app1 下面的内容的修改时间是同步完成以后的时间。
+
+删除 app1 下面的所有内容，执行：
+
+```
+rm -rf app1/*
+```
+
+用 root 用户的身份再执行一下同步：
+
+```
+sudo rsync -r app2/ app1
+```
+
+然后查看 app1 下的内容：
+
+```
+$ ls -l app1
+
+total 0
+-rw-r--r--. 1 root root 0 May 22 13:41 file1
+-rw-r--r--. 1 root root 0 May 22 13:41 file2
+-rw-r--r--. 1 root root 0 May 22 13:41 file3
+```
+
+这次 app1 下的内容跟 app2 下的源内容相比，拥有者，所属用户组，修改时间，这些东西都不一样了。
+
+3，存档模式可以保留文件属性，比如拥有者，修改时间等等，需要用一个 -a 选项。先把 app1 里的东西删除掉，执行：
+
+```
+rm -rf app1/*
+```
+
+然后用存档模式同步：
+
+```
+sudo rsync -a app2/ app1
+```
+
+查看同步之后的 app1 里的内容：
+
+```
+$ ls -l app1
+
+total 0
+-rw-r--r--. 1 wanghao ninghao 0 May 22 13:27 file1
+-rw-r--r--. 1 wanghao ninghao 0 May 22 13:27 file2
+-rw-r--r--. 1 wanghao ninghao 0 May 22 13:27 file3
+```
+
+观察文件属性。虽然同步时我们用了 root 用户身份，但同步之后的文件跟源文件的属性是一样的，一样的拥有者，用户组，一样的修改时间。
+
