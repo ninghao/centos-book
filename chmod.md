@@ -138,7 +138,7 @@ bash: cd: app: Permission denied
 
 也没有权限。也就是用户如果对目录没有执行权限，他不能进入这个目录，即使有写入权限，他也不能写入内容到这个目录。
 
-6，理解目录的写入权限。先把执行权限交给目录拥有者：
+**6**，理解目录的写入权限。先把执行权限交给目录拥有者：
 
 ```
 chmod u+x app
@@ -177,6 +177,28 @@ mv: cannot move ‘hello.txt’ to ‘app/hello.txt’: Permission denied
 ```
 
 没权限，因为 wanghao 这个用户现在不能写入内容到 app 目录的下面，因为他对这个目录没有写入的权限。重新把写入权限交给他，他就可以对这个目录做写入操作了。
+
+```
+chmod u+w app
+```
+
+**7**，理解用户组的权限。创建一个用户，设置登录密码，把身份切换到这个用户：
+
+```
+sudo useradd xiaoxue
+sudo passwd xiaoxue
+su xiaoxue
+```
+
+现在用户的身份是 xiaoxue ，我们试一下把 hello.txt 放到 app 下面，会提示没有权限。对于 app 这个目录来说，xiaoxue 的权限属于其它人，因为 xiaoxue 即不是目录的拥有者，她的群组里面也不包含 app 所属的用户组。
+
+退出 xiaoxue，把她的主群组设置成 ninghao：
+
+```
+sudo usermod -g ninghao xiaoxue
+```
+
+
 
 
 
