@@ -58,5 +58,13 @@ ssh-rsa AAAAB3NzaC1yc2EAAAAOAQABLAABAQCVDSJo3/9aATdCWph8Utst6G/0ngYKoNVxdf35CU07
 
 复制一下输出的内容，然后再登录到 Linux 服务器。登录以后，编辑一下当前登录的用户的主目录下面的 .ssh/authorized\_keys ，如果没这个文件，你可以创建一个。然后把输出的在自己电脑上生成的公钥内容插入到这个 authorized\_keys 文件里面。这样下次你再使用服务器上的这个用户登录服务器的时候，就不再需要输入密码了。
 
+如果你想对服务器上的其它用户也使用这种密钥的方式登录，你再做同样的配置，也就是把公钥放到这个用户主目录下的 .ssh/authorized\_keys 文件里面。
+
+比如 wanghao 用户的 authorized\_keys 文件就应该是在：
+
+```
+/home/wanghao/.ssh/authorized_keys
+```
+
 
 
