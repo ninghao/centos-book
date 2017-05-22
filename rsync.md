@@ -217,7 +217,29 @@ total size is 6  speedup is 0.07
 
 同步完成以后，查看 app1 下的内容列表，你会发现 file2 也不见了。
 
-7，把远程目录同步到本地目录。
+**7**，把远程目录同步到本地目录。退出登录的服务器，或者新建一个命令行界面标签，执行：
+
+```
+cd ~/desktop
+mkdir app
+cd app
+```
+
+再实施同步：
+
+```
+rsync -a -P wanghao@192.168.33.20:/home/wanghao/app2 ./
+```
+
+同步前你要配置好用户身份的验证，比如把你在电脑上生成的公钥放到服务器 wanghao 用户主目录下的 .ssh/authorized\_keys 里面。
+
+> 注意在 Windows 操作系统上没有 rsync 工具，可以先去安装一下，使用 Windows 系统包管理，可以这样：
+>
+> ```
+> choco install rsync
+> ```
+
+
 
 
 
