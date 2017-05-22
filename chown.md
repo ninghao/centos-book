@@ -71,5 +71,5 @@ drwxr-xr-x. 2 wanghao root 6 May 22 08:12 app
 sudo chown wanghao:ninghao app
 ```
 
-
+查看 /mnt 目录下的内容列表，观察 app 目录的拥有者，还有所属用户组。
 
