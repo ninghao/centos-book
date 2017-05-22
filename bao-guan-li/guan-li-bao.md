@@ -24,7 +24,7 @@ mariadb100u.x86_64 : A community developed branch of MySQL
 mariadb101u.x86_64 : A community developed branch of MySQL
 ```
 
-
+注意返回的结果里，有些软件包有数字 + u 这个后缀，这是因为我们安装了第三方仓库 IUS，它里的软件包比较新，为了跟系统自带的软件包区分开，包的结尾就用了数字 + u 后缀。数字部分表示包的版本，u 应该指的是 IUS 。
 
 ## 包的详情
 
@@ -61,5 +61,66 @@ Description : MariaDB is a community developed branch of MySQL.
             : contains the standard MariaDB/MySQL client programs and generic MySQL files.
 ```
 
+再查看一下另外的一个软件包的详细信息：
 
+```
+yum info mariadb101u
+```
+
+返回：
+
+```
+Available Packages
+Name        : mariadb101u
+Arch        : x86_64
+Epoch       : 1
+Version     : 10.1.22
+Release     : 1.ius.centos7
+Size        : 6.3 M
+Repo        : ius/x86_64
+Summary     : A community developed branch of MySQL
+URL         : http://mariadb.org
+License     : GPLv2 with exceptions and LGPLv2 and BSD
+Description : MariaDB is a community developed branch of MySQL.
+            : MariaDB is a multi-user, multi-threaded SQL database server.
+            : It is a client/server implementation consisting of a server daemon (mysqld)
+            : and many different client programs and libraries. The base package
+            : contains the standard MariaDB/MySQL client programs and generic MySQL files.
+```
+
+注意返回的信息，Arch 是这个软件包适用的架构，Version 是这个软件包的版本号，Repo 指的是这个软件包来自哪个仓库。
+
+## 安装包
+
+使用 Yum 安装包：
+
+```
+yum install 包的名字
+```
+
+注意在使用普通用户安装包的时候，你要在命令前面加上 sudo 获取到管理员的权限，因为只有管理员才能在系统上安装软件包。
+
+比如我要安装 mariadb101u 这个包：
+
+```
+sudo yum install mariadb101u -y
+```
+
+加上 `-y` 表示确认安装，不然会提示你，是否要安装指定的软件包。
+
+## 解决冲突
+
+你要安装的软件包，可能跟系统上已经存在软件包发生冲突。比如上面执行安装 maraidb101u 这个软件包的时候，就提示：
+
+```
+Error: mariadb101u-config conflicts with 1:mariadb-libs-5.5.52-1.el7.x86_64
+```
+
+意思就是要安装的软件包或者它依赖的某个包，跟系统上的另外一包（mariadb-libs-5.5...） 有冲突。这可能是因为要安装的东西同样依赖 mariadb-libs ，但可能需要的版本不同。解决的方法是删除掉系统上已经存在的这个软件包：
+
+```
+sudo yum remove mariadb-libs -y
+```
+
+完成以后再次执行安装，这样应该就不会遇到冲突问题了。
 
