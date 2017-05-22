@@ -136,3 +136,46 @@ total 0
 
 观察文件属性。虽然同步时我们用了 root 用户身份，但同步之后的文件跟源文件的属性是一样的，一样的拥有者，用户组，一样的修改时间。
 
+**4**，显示同步进度。先删除 app1 下的内容：
+
+```
+rm -rf app1/*
+```
+
+显示同步进度需要用一个 P 选项，执行：
+
+```
+rsync -a -P app2/ app1
+```
+
+返回类似的东西：
+
+```
+sending incremental file list
+./
+file1
+           0 100%    0.00kB/s    0:00:00 (xfer#1, to-check=2/4)
+file2
+           0 100%    0.00kB/s    0:00:00 (xfer#2, to-check=1/4)
+file3
+           0 100%    0.00kB/s    0:00:00 (xfer#3, to-check=0/4)
+
+sent 193 bytes  received 72 bytes  530.00 bytes/sec
+total size is 0  speedup is 0.00
+
+```
+
+**5**，同步有变化的文件。rsync 只会同步有变化的文件，先执行一下同步：
+
+```
+rsync -a -P app2/ app1
+```
+
+这次没同步任何文件，因为 app2 与 app1 里的内容完全是一样的。再修改一下 app2 里的 file1 文件里的内容：
+
+```
+echo 'hello' >> app2/file1
+```
+
+再执行一下同步，这次就会把 app2 下面发生变化的 file1 同步到 app1 下面了。
+
