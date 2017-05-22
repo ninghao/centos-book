@@ -82,3 +82,12 @@ touch hello.txt
 
 成功地进入到了 app 并在它里面创建了一个叫 hello.txt 的文件。因为 wanghao 是 app 目录的拥有者，对于这个目录他有执行与写入的权限。
 
+再删除掉创建的 app 目录：
+
+```
+cd ../
+rm -rf app
+```
+
+
+

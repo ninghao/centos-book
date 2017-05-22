@@ -84,3 +84,5 @@ chmod u+x hello.txt
 
 再执行一下 hello.txt，这次就会返回一个 ”hello“，说明拥有者现在已经可以执行这个文件了。
 
+4，
+
