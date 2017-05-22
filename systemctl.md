@@ -64,7 +64,7 @@ sudo systemctl disable 服务
 
 安装一个 NGINX Web 服务器，然后练习一下 systemctl 相关的命令。
 
-1，先安装一下 NGINX，使用 Yum 包管理工具，执行：
+**1**，先安装一下 NGINX，使用 Yum 包管理工具，执行：
 
 ```
 sudo yum install nginx -y
@@ -87,7 +87,7 @@ sudo systemctl status nginx
 
 注意 Active 那里，显示的是 inactive（dead），这就表示这个服务当前还没有运行。
 
-2，启动 NGINX 服务，执行：
+**2**，启动 NGINX 服务，执行：
 
 ```
 sudo systemctl start nginx
@@ -117,7 +117,7 @@ Hint: Some lines were ellipsized, use -l to show in full.
 
 这次 Active 就变成了 active（running），表示服务正在运行。
 
-3，启用 NGINX 服务，让它可以开机自启动，执行：
+**3**，启用 NGINX 服务，让它可以开机自启动，执行：
 
 ```
 sudo systemctl enable nginx
@@ -129,9 +129,9 @@ sudo systemctl enable nginx
 Created symlink from /etc/systemd/system/multi-user.target.wants/nginx.service to /usr/lib/systemd/system/nginx.service.
 ```
 
-4，重新启动一下服务器，然后再查看 NGINX 的运行状态。没什么问题的话，它的状态应该是 active（running）。
+**4**，重新启动一下服务器，然后再查看 NGINX 的运行状态。没什么问题的话，它的状态应该是 active（running）。
 
-5，查看系统进程，看一下运行 NGINX 工作进程的用户是谁。执行：
+**5**，查看系统进程，看一下运行 NGINX 工作进程的用户是谁。执行：
 
 ```
 ps aux | grep nginx
@@ -145,7 +145,7 @@ nginx     4901  0.0  0.3  46184  1888 ?        S    06:06   0:00 nginx: worker p
 
 一开始的 nginx 就是 nginx 的 worker process 进程的用户。
 
-6，修改 NGINX 的配置文件，重新设置运行 nginx 的用户。先编辑文件：
+**6**，修改 NGINX 的配置文件，重新设置运行 nginx 的用户。先编辑文件：
 
 ```
 sudo vi /etc/nginx/nginx.conf
