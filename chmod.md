@@ -59,8 +59,28 @@ ls -l
 **2**，理解文件的写入权限。试着写入内容到 hello.txt 文件里：
 
 ```
-echo 'hello' >> hello.txt
+echo 'echo "hello"' >> hello.txt
 ```
 
 执行上面这行命令的用户是 wanghao，他是 hello.txt 文件的拥有者，这个文件的拥有者有可以写入的权限，所以会成功写入内容。
+
+3，理解文件的执行权限。执行一下：
+
+```
+./hello.txt
+```
+
+意思是执行一下 hello.txt 这个文件。会返回：
+
+```
+bash: ./hello.txt: Permission denied
+```
+
+提示 Permission denied ，没有权限。因为 hello.txt 对于任何人来说都没有可执行权限（x）。我们可以为文件的拥有者添加一个可执行权限：
+
+```
+chmod u+x hello.txt
+```
+
+再执行一下 hello.txt，这次就会返回一个 ”hello“，说明拥有者现在已经可以执行这个文件了。
 
