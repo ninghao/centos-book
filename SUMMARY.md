@@ -9,6 +9,7 @@
 ## 连接
 
 * [连接](lian-jie.md)
+* [SSH](ssh.md)
 
 ## 包管理
 
