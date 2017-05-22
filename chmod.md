@@ -198,7 +198,7 @@ su xiaoxue
 sudo usermod -g ninghao xiaoxue
 ```
 
-
+再修改一下 app 的权限，为所属用户组添加写入权限：
 
 
 
