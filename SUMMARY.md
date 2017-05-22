@@ -5,7 +5,7 @@
 * [介绍](README.md)
 * [任务](task.md)
 * [准备](prepare.md)
-* [群组](qun-zu.md)
+* [群组](group.md)
 
 ## 连接
 
