@@ -34,5 +34,6 @@
 ## 常用工具
 
 * [tar：打包与解压](tar.md)
-* [curl](curl.md)
+* [curl：用地址传输数据](curl.md)
+* [rsync：同步](rsyncff1a-tong-bu.md)
 
