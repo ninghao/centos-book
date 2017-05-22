@@ -1,2 +1,6 @@
 # chown
 
+chown（change owner）
+
+
+
