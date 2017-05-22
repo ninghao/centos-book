@@ -1,6 +1,6 @@
 # 连接
 
-Linux 服务器一般不会为你提供一个可以远程操作的图形界面。所有的任务都是在命令行下完成的，你要尽快习惯在命令行界面下完成任务。参考宁皓网的《命令行》这本书。
+Linux 服务器一般不会为你提供一个可以远程操作的图形界面。所有的任务都是在命令行下完成的，你要尽快习惯在命令行界面下完成任务。参考宁皓网的《CLI》这本书。
 
 你想对一台 Linux 系统的服务器做些操作，你得先连接到这台服务器，要用的工具是 ssh 。打开你在本地电脑上的命令行工具，然后用 ssh 命令连接服务器，连接成功以后，你在命令行下做的操作就相当于是在远程的服务器上做的。
 
@@ -25,7 +25,7 @@ vagrant 是我连接服务器的时候使用的用户，这个用户应该提前
 ```
 The authenticity of host '192.168.33.20 (192.168.33.20)' can't be established.
 ECDSA key fingerprint is SHA256:YdSnCe4b5efT7xy5pOX4lG/dJBPVVBNHaj7RR1cAm5o.
-Are you sure you want to continue connecting (yes/no)?  
+Are you sure you want to continue connecting (yes/no)?
 ```
 
 输入 yes ，然后回车。
