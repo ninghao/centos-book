@@ -35,5 +35,5 @@
 
 * [tar：打包与解压](tar.md)
 * [curl：用地址传输数据](curl.md)
-* [rsync：同步](rsyncff1a-tong-bu.md)
+* [rsync：同步](rsync.md)
 
