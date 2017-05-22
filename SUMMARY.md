@@ -9,7 +9,7 @@
 ## 连接
 
 * [连接](remote-control.md)
-* [SSH](ssh.md)
+* [ssh](ssh.md)
 
 ## 权限
 
