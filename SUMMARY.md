@@ -3,9 +3,9 @@
 ## 前奏
 
 * [介绍](README.md)
+* [前置](requirements.md)
 * [任务](task.md)
 * [准备](prepare.md)
-* [前置](qian-zhi.md)
 
 ## 连接
 
