@@ -17,6 +17,7 @@
 * [sudo](sudo.md)
 * [群组](group.md)
 * [权限](permissions.md)
+* [chown](chown.md)
 * [chmod](chmod.md)
 
 ## 包管理
