@@ -1,13 +1,9 @@
 # Summary
 
-* [Introduction](README.md)
-* [First Chapter](chapter1.md)
-* [帮助](bang-zhu.md)
-* [列出](lie-chu.md)
-* [创建](chuang-jian.md)
-* [编辑](xiu-gai.md)
-* [虚拟机](xu-ni-ji.md)
-* [连接](lian-jie.md)
+## 前奏
+
+* [介绍](README.md)
+* [任务](chapter1.md)
 
 ## 服务
 
