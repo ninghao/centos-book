@@ -137,5 +137,17 @@ drwxr-xr-x. 2 wanghao ninghao  23 May 22 12:07 airbnb-js
 
 观察 airbnb-js.tar.gz 这个文件的大小。现在它是 28K，包里包含的 README.md 文件的大小是 107K，这种生成包的时候我们用了 z 选项，也就是会用 gzip 压缩文件，所以生成的包的体积会小一些。
 
-**5**，解压包。
+**5**，解压包。先删除目录 airbnb-js，执行：
+
+```
+rm -rf airbnb-js
+```
+
+再解压 airbnb-js.tar.gz，执行：
+
+```
+tar -xzf airbnb-js.tar.gz
+```
+
+查看目录下的列表，airbnb-js 这个目录又会出现了，它是解压 airbnb-js.tar.gz 以后生成的目录。
 
