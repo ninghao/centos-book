@@ -100,7 +100,7 @@ drwxr-xr-x. 2 wanghao ninghao  6 May 22 08:38 app
 
 创建的 app 目录的拥有者是 wanghao，所属用户组是 ninghao。
 
-5，理解目录的写入与执行权限。先把 hello.txt 移动到 app 目录下：
+**5**，理解目录的执行权限。先把 hello.txt 移动到 app 目录下：
 
 ```
 mv hello.txt app/
@@ -137,4 +137,46 @@ bash: cd: app: Permission denied
 ```
 
 也没有权限。也就是用户如果对目录没有执行权限，他不能进入这个目录，即使有写入权限，他也不能写入内容到这个目录。
+
+6，理解目录的写入权限。先把执行权限交给目录拥有者：
+
+```
+chmod u+x app
+```
+
+然后去掉拥有者对这个目录的写入权限：
+
+```
+chmod u-w app
+```
+
+再试一下进入这个目录：
+
+```
+cd app
+```
+
+可以进入。再返回上一组目录：
+
+```
+cd ../
+```
+
+用户对目录没有写入权限，但拥有执行权限，是可以进入到这个目录的。
+
+试一下把 hello.txt 移动到 app ：
+
+```
+mv hello.txt app/
+```
+
+返回：
+
+```
+mv: cannot move ‘hello.txt’ to ‘app/hello.txt’: Permission denied
+```
+
+没权限，因为 wanghao 这个用户现在不能写入内容到 app 目录的下面，因为他对这个目录没有写入的权限。重新把写入权限交给他，他就可以对这个目录做写入操作了。
+
+
 
