@@ -200,5 +200,9 @@ sudo usermod -g ninghao xiaoxue
 
 再修改一下 app 的权限，为所属用户组添加写入权限：
 
+```
+sudo chmod g+w app
+```
 
+再把身份切换到 xiaoxue 这个用户，然后再试一下把 hello.txt 移动到 app 的下面，这次就会移动成功，因为 xiaoxue 所属的用户组 ninghao，对 app 这个目录拥有执行与写入的权限。
 
