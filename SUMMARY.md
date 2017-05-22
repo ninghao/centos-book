@@ -4,6 +4,11 @@
 
 * [介绍](README.md)
 * [任务](task.md)
+* [准备](zhun-bei.md)
+
+## 包管理
+
+* [仓库](bao-guan-li/cang-ku.md)
 
 ## 服务
 
