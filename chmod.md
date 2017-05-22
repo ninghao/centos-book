@@ -84,5 +84,57 @@ chmod u+x hello.txt
 
 再执行一下 hello.txt，这次就会返回一个 ”hello“，说明拥有者现在已经可以执行这个文件了。
 
-4，
+**4**，在用户主目录下创建一个叫 app 的目录：
+
+```
+cd ~
+mkdir app
+```
+
+成功创建了 app 目录，因为用户主目录的拥有者就是当前登录的用户，他对于用户主目录拥有执行与写入的权限。查看主目录下的东西：
+
+```
+drwxr-xr-x. 2 wanghao ninghao  6 May 22 08:38 app
+-rwxr--r--. 1 wanghao ninghao 13 May 22 08:31 hello.txt
+```
+
+创建的 app 目录的拥有者是 wanghao，所属用户组是 ninghao。
+
+5，理解目录的写入与执行权限。先把 hello.txt 移动到 app 目录下：
+
+```
+mv hello.txt app/
+```
+
+当前用户可以成功移动文件到 app 目录。再把 hello.txt 移出 app ：
+
+```
+mv app/hello.txt ./
+```
+
+也可以完成。这们我们去掉 app 目录的拥有者的可执行权限：
+
+```
+chmod u-x app
+```
+
+再试着把 hello.txt 放到 app 里面，这次会提示：
+
+```
+mv: cannot stat ‘app/hello.txt’: Permission denied
+```
+
+提示没有权限，我们再试着用 wanghao 的身份进入到 app 目录：
+
+```
+cd app
+```
+
+提示：
+
+```
+bash: cd: app: Permission denied
+```
+
+也没有权限。也就是用户如果对目录没有执行权限，他不能进入这个目录，即使有写入权限，他也不能写入内容到这个目录。
 
