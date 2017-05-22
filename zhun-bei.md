@@ -12,6 +12,11 @@ mkdir ninghao-centos
 cd ninghao-centos
 vagrant init centos/7
 vagrant up
+```
+
+虚拟机启动以后，连接到它，执行：
+
+```
 vagrant ssh
 ```
 
