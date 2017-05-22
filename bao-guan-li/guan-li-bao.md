@@ -124,3 +124,13 @@ sudo yum remove mariadb-libs -y
 
 完成以后再次执行安装，这样应该就不会遇到冲突问题了。
 
+## 删除包
+
+使用 Yum 删除包，用的是：
+
+```
+yum remove 要删除的包
+```
+
+
+
