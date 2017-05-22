@@ -16,6 +16,7 @@
 * [用户](users.md)
 * [sudo](sudo.md)
 * [权限](permissions.md)
+* [chmod](chmod.md)
 
 ## 包管理
 
