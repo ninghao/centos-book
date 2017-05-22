@@ -13,9 +13,9 @@
 
 ## 包管理
 
-* [包管理](bao-guan-li/bao-guan-li.md)
-* [仓库](bao-guan-li/cang-ku.md)
-* [Yum](bao-guan-li/guan-li-bao.md)
+* [包管理](package-manager.md)
+* [仓库](repo.md)
+* [Yum](yum.md)
 
 ## 服务
 
