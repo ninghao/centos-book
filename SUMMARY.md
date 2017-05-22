@@ -8,7 +8,7 @@
 
 ## 连接
 
-* [连接](lian-jie.md)
+* [连接](remote-control.md)
 * [SSH](ssh.md)
 
 ## 包管理
