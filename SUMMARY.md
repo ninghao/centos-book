@@ -4,7 +4,7 @@
 
 * [介绍](README.md)
 * [任务](task.md)
-* [准备](zhun-bei.md)
+* [准备](prepare.md)
 
 ## 连接
 
