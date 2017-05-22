@@ -4,7 +4,7 @@
 
 ### 虚拟机
 
-创建一台 CentOS 系统的虚拟机。
+创建一台 CentOS 系统的虚拟机。打开[命令行](https://cli.ninghao.net/)，执行：
 
 ```
 cd ~/desktop
