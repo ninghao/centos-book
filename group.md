@@ -58,6 +58,8 @@ usermod 可以修改用户，使用这个命令可以把用户添加到某个群
 usermod -a -G 群组 用户
 ```
 
+**练习**
+
 比如把 wanghao 这个用户放到 ninghao 这个群组里，执行：
 
 ```
@@ -72,13 +74,15 @@ wanghao : wanghao wheel ninghao
 
 ## 修改用户主群组
 
-用的命名是 usermod ，使用的参数是 -g，像这样：
+修改了用户的主群组以后，这个用户创建的目录与文件所属的用户组就是修改之后的这个主群组的名字。用的命令是 usermod ，使用的参数是 -g，像这样：
 
 ```
 usermod -g 主群组 用户
 ```
 
-比如把 wanghao 用户的主群组修改成 ninghao，执行：
+**练习**
+
+把 wanghao 用户的主群组修改成 ninghao，执行：
 
 ```
 sudo usermod -g ninghao wanghao
