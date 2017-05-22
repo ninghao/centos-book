@@ -175,5 +175,5 @@ sudo useradd www-data
 sudo systemctl reload nginx
 ```
 
-再次查看系统进程，看一下运行 nginx 的用户是谁。你会发现，这次会是 www-data 这个用户。
+再次查看系统进程，看一下运行 nginx 的用户是谁。你会发现，这次会是 www-data 这个用户。说明重载服务以后，新做的配置已经生效了。
 
