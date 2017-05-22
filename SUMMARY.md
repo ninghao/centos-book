@@ -15,6 +15,7 @@
 
 * [包管理](bao-guan-li/bao-guan-li.md)
 * [仓库](bao-guan-li/cang-ku.md)
+* [Yum](bao-guan-li/guan-li-bao.md)
 
 ## 服务
 
