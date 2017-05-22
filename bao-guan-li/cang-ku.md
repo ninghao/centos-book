@@ -61,7 +61,9 @@ enabled=1
 
 再查看一下仓库列表，你会发现 NGINX Stable Version 这个仓库。
 
-
+```
+nginx/x86_64                     NGINX Stable Version                                                        66
+```
 
 
 
