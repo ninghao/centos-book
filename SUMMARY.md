@@ -21,7 +21,7 @@
 
 ## 权限
 
-* [用户](quan-xian/yong-hu.md)
-* [sudo](quan-xian/sudo.md)
-* [权限](quan-xian/quan-xian.md)
+* [用户](users.md)
+* [sudo](sudo.md)
+* [权限](permissions.md)
 
