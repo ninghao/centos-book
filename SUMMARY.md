@@ -21,7 +21,7 @@
 
 * [包管理](package-manager.md)
 * [仓库](repo.md)
-* [Yum](yum.md)
+* [yum](yum.md)
 
 ## 服务
 

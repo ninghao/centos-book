@@ -1,6 +1,6 @@
-# Yum
+# yum
 
-Yum 是用在 CentOS 系统上的包管理工具。
+yum 是用在 CentOS 系统上的包管理工具。
 
 ## 搜索包
 
