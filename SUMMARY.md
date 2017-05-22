@@ -25,5 +25,6 @@
 
 ## 服务
 
-* [服务](fu-wu/fu-wu.md)
+* [服务](service.md)
+* [systemctl](systemctl.md)
 
