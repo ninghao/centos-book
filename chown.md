@@ -73,3 +73,12 @@ sudo chown wanghao:ninghao app
 
 查看 /mnt 目录下的内容列表，观察 app 目录的拥有者，还有所属用户组。
 
+4，以 wanghao 用户的身份进入到 app 这个目录，然后去创建一个文件：
+
+```
+cd app
+touch hello.txt
+```
+
+成功地进入到了 app 并在它里面创建了一个叫 hello.txt 的文件。因为 wanghao 是 app 目录的拥有者，对于这个目录他有执行与写入的权限。
+
