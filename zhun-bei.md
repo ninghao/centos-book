@@ -4,7 +4,7 @@
 
 ### 虚拟机
 
-创建一台 CentOS 系统的虚拟机。打开[命令行](https://cli.ninghao.net/)，执行：
+创建一台 CentOS 系统的虚拟机。打开命令行，执行：
 
 ```
 cd ~/desktop
@@ -15,5 +15,5 @@ vagrant up
 vagrant ssh
 ```
 
-上面这些步骤的详细说明，你可以参考 《[Vagrant](https://vagrant.ninghao.net)》这本书。
+上面这些步骤的详细说明，你可以参考 《[Vagrant](https://vagrant.ninghao.net)》这本书。关于命令行界面的使用，可以参考宁皓的《[CLI](https://cli.ninghao.net/)》这本书。
 
