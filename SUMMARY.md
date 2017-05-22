@@ -11,6 +11,12 @@
 * [连接](remote-control.md)
 * [SSH](ssh.md)
 
+## 权限
+
+* [用户](users.md)
+* [sudo](sudo.md)
+* [权限](permissions.md)
+
 ## 包管理
 
 * [包管理](package-manager.md)
@@ -20,10 +26,4 @@
 ## 服务
 
 * [服务](fu-wu/fu-wu.md)
-
-## 权限
-
-* [用户](users.md)
-* [sudo](sudo.md)
-* [权限](permissions.md)
 
