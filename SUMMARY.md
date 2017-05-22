@@ -33,5 +33,5 @@
 
 ## 常用工具
 
-* tar：打包与解压
+* [tar：打包与解压](chang-yong-gong-ju/tarff1a-da-bao-yu-jie-ya.md)
 
