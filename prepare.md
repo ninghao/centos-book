@@ -15,7 +15,7 @@ vagrant init centos/7
 
 用编辑器打开项目的目录 ninghao-centos，编辑里面的 Vagrantfile，把这个文件的内容替换成：
 
-```
+```ruby
 Vagrant.configure("2") do |config|
   config.vm.box = "centos/7"
   config.vm.network "private_network", ip: "192.168.33.20"
