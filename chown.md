@@ -14,13 +14,13 @@ chown -R 用户:群组 目录
 
 ## 练习
 
-1，先切换到一个普通用户的身份，比如切换成我之前创建的 wanghao 这个用户。
+**1**，先切换到一个普通用户的身份，比如切换成我之前创建的 wanghao 这个用户。
 
 ```
 su wanghao
 ```
 
-2，进入到 /mnt 这个目录的下面，试着去创建一个新的目录。
+**2**，进入到 /mnt 这个目录的下面，试着去创建一个新的目录。
 
 ```
 cd /mnt
@@ -53,7 +53,7 @@ drwxr-xr-x. 2 root root 6 May 22 08:12 app
 
 观察 app 目录的拥有者还有所属的用户组，现在它的拥有者是 root ，所属的用户组是 root。
 
-3，把 /mnt 下的 app  目录的拥有者修改成 wanghao，执行：
+**3**，把 /mnt 下的 app  目录的拥有者修改成 wanghao，执行：
 
 ```
 sudo chown wanghao app
@@ -73,7 +73,7 @@ sudo chown wanghao:ninghao app
 
 查看 /mnt 目录下的内容列表，观察 app 目录的拥有者，还有所属用户组。
 
-4，以 wanghao 用户的身份进入到 app 这个目录，然后去创建一个文件：
+**4**，以 wanghao 用户的身份进入到 app 这个目录，然后去创建一个文件：
 
 ```
 cd app
