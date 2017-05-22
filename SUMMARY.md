@@ -5,6 +5,7 @@
 * [介绍](README.md)
 * [任务](task.md)
 * [准备](prepare.md)
+* curl
 
 ## 连接
 
@@ -33,5 +34,5 @@
 
 ## 常用工具
 
-* [tar：打包与解压](chang-yong-gong-ju/tarff1a-da-bao-yu-jie-ya.md)
+* [tar：打包与解压](tar.md)
 
