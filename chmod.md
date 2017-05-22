@@ -51,12 +51,12 @@ ls -l
 返回：
 
 ```
--rw-rw-r--. 1 wanghao wanghao 0 May 22 06:56 hello.txt
+-rw-rw-r--. 1 wanghao ninghao 0 May 22 06:56 hello.txt
 ```
 
-这个 hello.txt 文件的权限如果用数字表示的话，应该是 664 ，读取（r） + 写入（w） = 6 ，读取权限用  4 表示。文件的拥有者是 wanghao，所属用户组也叫 wanghao 。
+这个 hello.txt 文件的权限如果用数字表示的话，应该是 664 ，读取（r） + 写入（w） = 6 ，读取权限用  4 表示。文件的拥有者是 wanghao，所属用户组是 ninghao 。因为之前我把 wanghao 用户的主群组修改成了 ninghao，所以使用这个用户创建的东西所属的用户组就会是这个 ninghao 用户组。
 
-**2**，试着写入内容到 hello.txt 文件里：
+**2**，理解文件的写入权限。试着写入内容到 hello.txt 文件里：
 
 ```
 echo 'hello' >> hello.txt
