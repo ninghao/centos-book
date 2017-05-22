@@ -33,7 +33,11 @@
 
 ## 常用工具
 
-* [tar：打包与解压](tar.md)
-* [curl：用地址传输数据](curl.md)
-* [rsync：同步](rsync.md)
+* [tar](tar.md)
+* [curl](curl.md)
+* [rsync](rsync.md)
+
+## 附录
+
+* [相关资源](fu-lu/xiang-guan-zi-yuan.md)
 
