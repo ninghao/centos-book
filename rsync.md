@@ -162,7 +162,6 @@ file3
 
 sent 193 bytes  received 72 bytes  530.00 bytes/sec
 total size is 0  speedup is 0.00
-
 ```
 
 **5**，同步有变化的文件。rsync 只会同步有变化的文件，先执行一下同步：
@@ -178,4 +177,29 @@ echo 'hello' >> app2/file1
 ```
 
 再执行一下同步，这次就会把 app2 下面发生变化的 file1 同步到 app1 下面了。
+
+**6**，同步时删除不存在的文件。使用 `--delete` 选项，先删除 app2 下面的 file2 这个文件：
+
+```
+rm -rf app2/file2
+```
+
+然后执行同步，使用一个 delete 选项：
+
+```
+rsync -a -P --delete app2/ app1
+```
+
+返回：
+
+```
+sending incremental file list
+./
+deleting file2
+
+sent 77 bytes  received 15 bytes  184.00 bytes/sec
+total size is 6  speedup is 0.07
+```
+
+同步完成以后，查看 app1 下的内容列表，你会发现 file2 也不见了。
 
