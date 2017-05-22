@@ -16,22 +16,15 @@ yum search 关键词
 yum search mariadb
 ```
 
-会返回一些结果：
+会返回一些结果（截取）：
 
 ```
-mariadb-bench.x86_64 : MariaDB benchmark scripts and data
-mariadb-devel.i686 : Files for development of MariaDB/MySQL applications
-mariadb-devel.x86_64 : Files for development of MariaDB/MySQL applications
-mariadb-embedded.i686 : MariaDB as an embeddable library
-mariadb-embedded.x86_64 : MariaDB as an embeddable library
-mariadb-embedded-devel.i686 : Development files for MariaDB as an embeddable library
-mariadb-embedded-devel.x86_64 : Development files for MariaDB as an embeddable library
-mariadb-libs.i686 : The shared libraries required for MariaDB/MySQL clients
-mariadb-libs.x86_64 : The shared libraries required for MariaDB/MySQL clients
-mariadb-server.x86_64 : The MariaDB server and related files
 mariadb.x86_64 : A community developed branch of MySQL
-mariadb-test.x86_64 : The test suite distributed with MariaD
+mariadb100u.x86_64 : A community developed branch of MySQL
+mariadb101u.x86_64 : A community developed branch of MySQL
 ```
+
+
 
 ## 包的详情
 
